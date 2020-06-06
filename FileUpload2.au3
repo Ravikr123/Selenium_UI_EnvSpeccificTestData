@@ -1,0 +1,5 @@
+ControlFocus("Open","","Edit1")
+WinActivate("Open")
+ControlSetText("Open","","Edit1",$CmdLine[1])
+WinActivate("Open")
+ControlClick("Open","","Button1")

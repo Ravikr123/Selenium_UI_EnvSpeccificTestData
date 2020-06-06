@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\ravkumar\AppData\Local\Temp\testng-eclipse--996938513\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow" hash-for-method="verifyServiceCenterAutomationFlow_DirectFlow([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 1...)">verifyServiceCenterAutomationFlow_DirectFlow([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 1...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow" hash-for-method="verifyServiceCenterAutomationFlow_InDirectFlow([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)">verifyServiceCenterAutomationFlow_InDirectFlow([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow" hash-for-method="verifyServiceCenter_CaseNotesTextLimitation_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 1...)">verifyServiceCenter_CaseNotesTextLimitation_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 1...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow" hash-for-method="verifyServiceCenter_CaseNotesTextLimitation_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, InDirect, Stage,...)">verifyServiceCenter_CaseNotesTextLimitation_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, InDirect, Stage,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow" hash-for-method="verifyServiceCenter_CreateCaseWith_3MBAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 3...)">verifyServiceCenter_CreateCaseWith_3MBAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 3...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow" hash-for-method="verifyServiceCenter_CreateCaseWith_3MB_Attachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)">verifyServiceCenter_CreateCaseWith_3MB_Attachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow" hash-for-method="verifyServiceCenter_CreateCaseWith_jpegAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 5...)">verifyServiceCenter_CreateCaseWith_jpegAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 5...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow" hash-for-method="verifyServiceCenter_CreateCaseWith_jpegAttachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)">verifyServiceCenter_CreateCaseWith_jpegAttachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow" hash-for-method="verifyServiceCenter_CreateCaseWith_pdfAttachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)">verifyServiceCenter_CreateCaseWith_pdfAttachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow" hash-for-method="verifyServiceCenter_CreateCaseWith_textAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 9...)">verifyServiceCenter_CreateCaseWith_textAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 9...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow" hash-for-method="verifyServiceCenter_CreateCaseWith_textAttachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, InDirect, Stage,...)">verifyServiceCenter_CreateCaseWith_textAttachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, InDirect, Stage,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyServiceCenterAutomationFlow_DirectFlow([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 1...)">
+                  </a> <!-- verifyServiceCenterAutomationFlow_DirectFlow([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 1...) -->
+                  <span class="method-name">verifyServiceCenterAutomationFlow_DirectFlow</span>
+                  <span class="parameters">([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 1])</span>
+                  <div class="stack-trace">java.lang.AssertionError: Unable to create a Direct Case
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.hpi.PageActions.PageElements_Methods.createCaseWith_MultipleAttachments(PageElements_Methods.java:753)
+	at com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow.verifyServiceCenterAutomationFlow_DirectFlow(Verify_ServiceCenter_AutomationFlow.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyServiceCenterAutomationFlow_InDirectFlow([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)">
+                  </a> <!-- verifyServiceCenterAutomationFlow_InDirectFlow([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...) -->
+                  <span class="method-name">verifyServiceCenterAutomationFlow_InDirectFlow</span>
+                  <span class="parameters">([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage, 2])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyServiceCenter_CaseNotesTextLimitation_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 1...)">
+                  </a> <!-- verifyServiceCenter_CaseNotesTextLimitation_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 1...) -->
+                  <span class="method-name">verifyServiceCenter_CaseNotesTextLimitation_Direct</span>
+                  <span class="parameters">([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 11])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyServiceCenter_CaseNotesTextLimitation_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, InDirect, Stage,...)">
+                  </a> <!-- verifyServiceCenter_CaseNotesTextLimitation_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, InDirect, Stage,...) -->
+                  <span class="method-name">verifyServiceCenter_CaseNotesTextLimitation_InDirect</span>
+                  <span class="parameters">([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, InDirect, Stage, 12])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyServiceCenter_CreateCaseWith_3MBAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 3...)">
+                  </a> <!-- verifyServiceCenter_CreateCaseWith_3MBAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 3...) -->
+                  <span class="method-name">verifyServiceCenter_CreateCaseWith_3MBAttachment_Direct</span>
+                  <span class="parameters">([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 3])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyServiceCenter_CreateCaseWith_3MB_Attachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)">
+                  </a> <!-- verifyServiceCenter_CreateCaseWith_3MB_Attachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...) -->
+                  <span class="method-name">verifyServiceCenter_CreateCaseWith_3MB_Attachment_InDirect</span>
+                  <span class="parameters">([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage, 4])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyServiceCenter_CreateCaseWith_jpegAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 5...)">
+                  </a> <!-- verifyServiceCenter_CreateCaseWith_jpegAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 5...) -->
+                  <span class="method-name">verifyServiceCenter_CreateCaseWith_jpegAttachment_Direct</span>
+                  <span class="parameters">([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 5])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyServiceCenter_CreateCaseWith_jpegAttachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)">
+                  </a> <!-- verifyServiceCenter_CreateCaseWith_jpegAttachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...) -->
+                  <span class="method-name">verifyServiceCenter_CreateCaseWith_jpegAttachment_InDirect</span>
+                  <span class="parameters">([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage, 6])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyServiceCenter_CreateCaseWith_pdfAttachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)">
+                  </a> <!-- verifyServiceCenter_CreateCaseWith_pdfAttachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...) -->
+                  <span class="method-name">verifyServiceCenter_CreateCaseWith_pdfAttachment_InDirect</span>
+                  <span class="parameters">([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage, 8])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyServiceCenter_CreateCaseWith_textAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 9...)">
+                  </a> <!-- verifyServiceCenter_CreateCaseWith_textAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 9...) -->
+                  <span class="method-name">verifyServiceCenter_CreateCaseWith_textAttachment_Direct</span>
+                  <span class="parameters">([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 9])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyServiceCenter_CreateCaseWith_textAttachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, InDirect, Stage,...)">
+                  </a> <!-- verifyServiceCenter_CreateCaseWith_textAttachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, InDirect, Stage,...) -->
+                  <span class="method-name">verifyServiceCenter_CreateCaseWith_textAttachment_InDirect</span>
+                  <span class="parameters">([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, InDirect, Stage, 10])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ravkumar\AppData\Local\Temp\testng-eclipse--996938513\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyServiceCenter_CaseNotesTextLimitation_Direct')
+data.setCell(0, 2, 'com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow')
+data.setCell(0, 3, 391909);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyServiceCenter_CreateCaseWith_textAttachment_Direct')
+data.setCell(1, 2, 'com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow')
+data.setCell(1, 3, 350395);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyServiceCenter_CreateCaseWith_jpegAttachment_Direct')
+data.setCell(2, 2, 'com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow')
+data.setCell(2, 3, 296566);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyServiceCenterAutomationFlow_InDirectFlow')
+data.setCell(3, 2, 'com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow')
+data.setCell(3, 3, 150265);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyServiceCenter_CaseNotesTextLimitation_InDirect')
+data.setCell(4, 2, 'com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow')
+data.setCell(4, 3, 149006);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyServiceCenter_CreateCaseWith_pdfAttachment_InDirect')
+data.setCell(5, 2, 'com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow')
+data.setCell(5, 3, 130155);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyServiceCenterAutomationFlow_DirectFlow')
+data.setCell(6, 2, 'com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow')
+data.setCell(6, 3, 114487);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyServiceCenter_CreateCaseWith_textAttachment_InDirect')
+data.setCell(7, 2, 'com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow')
+data.setCell(7, 3, 107869);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyServiceCenter_CreateCaseWith_jpegAttachment_InDirect')
+data.setCell(8, 2, 'com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow')
+data.setCell(8, 3, 102171);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyServiceCenter_CreateCaseWith_3MBAttachment_Direct')
+data.setCell(9, 2, 'com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow')
+data.setCell(9, 3, 85467);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyServiceCenter_CreateCaseWith_3MB_Attachment_InDirect')
+data.setCell(10, 2, 'com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow')
+data.setCell(10, 3, 84388);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 32 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyServiceCenter_CreateCaseWith_textAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 9...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Home Page is successful</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyServiceCenter_CreateCaseWith_jpegAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 5...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Home Page is successful</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyServiceCenter_CreateCaseWith_3MBAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 3...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Home Page is successful</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyServiceCenterAutomationFlow_DirectFlow([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 1...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Home Page is successful</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">init(Chrome, https://daily.gsbprint.net/pwi-sc/#/)</span>
+                <span class="method-start">1026 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyServiceCenterAutomationFlow_DirectFlow([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 1...)</span>
+                <span class="method-start">6322 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyServiceCenterAutomationFlow_DirectFlow status=FAILURE method=Verify_ServiceCe...)</span>
+                <span class="method-start">120813 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init(Chrome, https://daily.gsbprint.net/pwi-sc/#/)</span>
+                <span class="method-start">123759 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyServiceCenterAutomationFlow_InDirectFlow([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)</span>
+                <span class="method-start">128968 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyServiceCenterAutomationFlow_InDirectFlow status=SUCCESS method=Verify_Service...)</span>
+                <span class="method-start">279234 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init(Chrome, https://daily.gsbprint.net/pwi-sc/#/)</span>
+                <span class="method-start">281719 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyServiceCenter_CreateCaseWith_3MBAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 3...)</span>
+                <span class="method-start">286193 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyServiceCenter_CreateCaseWith_3MBAttachment_Direct status=SUCCESS method=Verif...)</span>
+                <span class="method-start">371661 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init(Chrome, https://daily.gsbprint.net/pwi-sc/#/)</span>
+                <span class="method-start">374162 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyServiceCenter_CreateCaseWith_3MB_Attachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)</span>
+                <span class="method-start">379298 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyServiceCenter_CreateCaseWith_3MB_Attachment_InDirect status=SUCCESS method=Ve...)</span>
+                <span class="method-start">463687 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init(Chrome, https://daily.gsbprint.net/pwi-sc/#/)</span>
+                <span class="method-start">464342 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyServiceCenter_CreateCaseWith_jpegAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 5...)</span>
+                <span class="method-start">468638 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyServiceCenter_CreateCaseWith_jpegAttachment_Direct status=SUCCESS method=Veri...)</span>
+                <span class="method-start">765205 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init(Chrome, https://daily.gsbprint.net/pwi-sc/#/)</span>
+                <span class="method-start">767618 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyServiceCenter_CreateCaseWith_jpegAttachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)</span>
+                <span class="method-start">771935 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyServiceCenter_CreateCaseWith_jpegAttachment_InDirect status=SUCCESS method=Ve...)</span>
+                <span class="method-start">874107 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init(Chrome, https://daily.gsbprint.net/pwi-sc/#/)</span>
+                <span class="method-start">876664 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyServiceCenter_CreateCaseWith_pdfAttachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Indirect, Stage,...)</span>
+                <span class="method-start">880985 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyServiceCenter_CreateCaseWith_pdfAttachment_InDirect status=SUCCESS method=Ver...)</span>
+                <span class="method-start">1011141 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init(Chrome, https://daily.gsbprint.net/pwi-sc/#/)</span>
+                <span class="method-start">1013529 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyServiceCenter_CreateCaseWith_textAttachment_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 9...)</span>
+                <span class="method-start">1018576 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyServiceCenter_CreateCaseWith_textAttachment_Direct status=SUCCESS method=Veri...)</span>
+                <span class="method-start">1368973 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init(Chrome, https://daily.gsbprint.net/pwi-sc/#/)</span>
+                <span class="method-start">1371724 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyServiceCenter_CreateCaseWith_textAttachment_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, InDirect, Stage,...)</span>
+                <span class="method-start">1376950 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyServiceCenter_CreateCaseWith_textAttachment_InDirect status=SUCCESS method=Ve...)</span>
+                <span class="method-start">1484820 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init(Chrome, https://daily.gsbprint.net/pwi-sc/#/)</span>
+                <span class="method-start">1487217 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyServiceCenter_CaseNotesTextLimitation_Direct([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, Direct, Stage, 1...)</span>
+                <span class="method-start">1491582 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyServiceCenter_CaseNotesTextLimitation_Direct status=SUCCESS method=Verify_Ser...)</span>
+                <span class="method-start">1883492 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init(Chrome, https://daily.gsbprint.net/pwi-sc/#/)</span>
+                <span class="method-start">1884665 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyServiceCenter_CaseNotesTextLimitation_InDirect([https://stg.printopt.org/ , Latex, janardhan.v@hp.com, testPassword#1, SG74J1R001, InDirect, Stage,...)</span>
+                <span class="method-start">1890206 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyServiceCenter_CaseNotesTextLimitation_InDirect status=SUCCESS method=Verify_S...)</span>
+                <span class="method-start">2039213 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">2041572 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

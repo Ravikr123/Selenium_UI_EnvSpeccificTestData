@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.hpi.TestScripts.Verify_ServiceCenter_CreateCase_FileSizeError">
+        <methods>
+          <include name="getResult"/>
+          <include name="startReport"/>
+          <include name="init"/>
+          <include name="endReport"/>
+          <include name="verifyServiceCenter_CreateCaseWith_3MBAttachment_Direct" invocation-numbers="0"/>
+          <include name="verifyServiceCenter_CreateCaseWith_3MB_Attachment_InDirect" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.hpi.TestScripts.Verify_ServiceCenter_CreateCase_FileSizeError -->
+      <class name="com.hpi.TestScripts.Verify_ServiceCenter_CreateCase_jpegAttachment">
+        <methods>
+          <include name="init"/>
+          <include name="verifyServiceCenter_CreateCaseWith_jpegAttachment_InDirect" invocation-numbers="0"/>
+          <include name="getResult"/>
+          <include name="startReport"/>
+          <include name="verifyServiceCenter_CreateCaseWith_jpegAttachment_Direct" invocation-numbers="0"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- com.hpi.TestScripts.Verify_ServiceCenter_CreateCase_jpegAttachment -->
+      <class name="com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow_MultiAttachments">
+        <methods>
+          <include name="verifyServiceCenterAutomationFlow_InDirectFlow" invocation-numbers="0"/>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="init"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.hpi.TestScripts.Verify_ServiceCenter_AutomationFlow_MultiAttachments -->
+      <class name="com.hpi.TestScripts.Verify_ServiceCenter_CreateCase_textAttachment">
+        <methods>
+          <include name="getResult"/>
+          <include name="init"/>
+          <include name="startReport"/>
+          <include name="verifyServiceCenter_CreateCaseWith_textAttachment_Direct" invocation-numbers="0"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- com.hpi.TestScripts.Verify_ServiceCenter_CreateCase_textAttachment -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
